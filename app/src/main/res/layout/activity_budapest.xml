@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <android.support.constraint.Guideline
+    android:id="@+id/startGuideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="16dp" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/endGuideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_end="16dp" />
+
+  <EditText
+    android:id="@+id/nameEditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="Name"
+    app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+    app:layout_constraintStart_toStartOf="@+id/startGuideline"
+    app:layout_constraintTop_toTopOf="@+id/topGuideline" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/topGuideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="16dp" />
+
+  <TextView
+    android:id="@+id/greetingTextView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+    app:layout_constraintStart_toStartOf="@+id/startGuideline"
+    app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+    tools:text="Hello, stranger"/>
+</android.support.constraint.ConstraintLayout>

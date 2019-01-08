@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Mobius Demo</string>
+  <string name="hello_stranger">Hello, stranger</string>
+  <string name="hello_user">Hello, %s</string>
+</resources>
