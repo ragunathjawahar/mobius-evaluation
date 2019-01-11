@@ -6,7 +6,7 @@ import com.spotify.mobius.Next
 import com.spotify.mobius.Next.next
 
 object BudapestLogic {
-  fun init(): Init<BudapestModel, Nothing> =
+  fun init(): Init<BudapestModel, Nothing> = // TODO(rj) 11/Jan/19 - Where are we using this?
       Init { First.first(it) }
 
   fun update(
